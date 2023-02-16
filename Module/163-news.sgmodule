@@ -1,0 +1,12 @@
+#!name=网易新闻去广告
+#!desc=
+#!system=ios
+
+[URL Rewrite]
+^https?://g1.163.com/madfeedback - reject
+^https?://img1.126.net/.+dpi=6401136 - reject
+^https?://img1.126.net/channel14/ - reject
+^https?://nex.163.com/q - reject
+
+[MITM]
+hostname = %APPEND% 163.com,126.net
